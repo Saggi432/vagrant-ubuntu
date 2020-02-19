@@ -57,7 +57,7 @@ Vagrant.configure("2") do |config|
       config.vm.define "master-#{i}" do |node|
         # Name shown in the GUI
         node.vm.provider "virtualbox" do |vb|
-            vb.name = "kubernetes-ha-master-#{i}"
+            vb.name = "master-#{i}"
             vb.memory = 2048
             vb.cpus = 2
         end
